@@ -28,8 +28,9 @@ body {
   align-items: center;
 }
 
-.nav-container {
+nav {
   width: 100%;
+  padding: 20px 0;
   display: flex;
   justify-content: space-around;
   text-align: center;
@@ -46,16 +47,18 @@ ul a{
   border-radius: 5px;
 }
 
-a:hover, .card a:hover {
+a:hover, section a:hover {
   color: rgb(143, 140, 140);
 }
-.nav ul, .nav1 a, .card-right ul {
+.nav-link ul, .nav-link a, main ul {
   list-style-type: none;
-  text-decoration: none; 
+  margin: 0;
+  padding: 0;
+  line-height: 2.5;;
 }
 
 
-.nav ul {
+.nav-link ul {
   display: inline-flex;
   text-align: center;
   width: 100%;
@@ -75,7 +78,7 @@ a:hover, .card a:hover {
   padding-right: 10px;
 }
 
-.header-container {
+header {
   text-align: center;
   width: 100%;
   min-height: 450px;
@@ -116,7 +119,7 @@ a:hover, .card a:hover {
   color: yellow;
 }
 
-.main-container {
+main {
   width: 100%;
   flex-grow: 1;
   text-align: center;
@@ -136,8 +139,8 @@ a:hover, .card a:hover {
   line-height: 2;
 }
 
-.card {
-  margin: 0 28px;
+section {
+  margin: 5px 25px;
   padding: 20px;;
   border-radius: 10px;
   width: 50%;
@@ -149,18 +152,29 @@ a:hover, .card a:hover {
   transition: all .5s;
 }
 
-
-.card-title,
-.card a{
-  color: blueviolet;
+section p{
+  margin: 0;
 }
 
 
+.card-title,
+section a{
+  color: blueviolet;
+}
+
+.card-title{
+  margin: 0;
+  padding: 10px 0px;
+}
+
+.card-skills{
+margin: 5px 0;
+}
 .card-skills ul>li {
   border-radius: 6px;
   display: inline;
   flex-wrap: wrap;
-  margin: 2px;
+  margin: 4px;
   padding: 3px;
   background-color: #6f95E7;
   color: white;
@@ -274,7 +288,7 @@ a:hover, .card a:hover {
 }
 
 
-.footer {
+footer {
   width: 100%;
   min-height: 30px;
   margin-top: 20px;
@@ -283,7 +297,7 @@ a:hover, .card a:hover {
   margin-left: -20px;
 }
 
-.footer a {
+footer a {
   display: inline-block;
   padding: 2px;
   border-radius: 5px;
