@@ -104,13 +104,13 @@ a:hover, .card a:hover {
   text-shadow: 1px 1px rgb(237, 100, 196, 0.2);
 }
 .tag {
-  background-color: #efefef;
-  color: black;
+  display: table;
+  color: rgb(141, 113, 232);
+  background-color: white;
   padding: 10px;
   border-radius: 5px;
-  display: table;
   margin: 10px auto;
-} 
+}
 .location {
   background-color: #222;
   color: yellow;
